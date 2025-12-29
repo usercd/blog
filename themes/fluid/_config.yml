@@ -284,7 +284,7 @@ web_analytics:
 
   # Umami Analytics，仅支持自部署。如果要展示 PV UV 需要填写所有配置项，否则只填写 `src` 和 `website_id` 即可
   # Umami Analytics, only Self-host support. If you want to display PV UV need to set all config items, otherwise only set 'src' and 'website_id'
-  # See: https://umami.is/docs
+  # See: https://umami.is/docs/authentication
   umami:
     # umami js 文件地址，需要在 umami 后台创建站点后获取
     # umami js file url, get after create website in umami
@@ -499,8 +499,8 @@ index:
   slogan:
     enable: true
 
-    # 为空则按 hexo config.subtitle 显示，支持列表格式来实现随机选择一行文字显示
-    # If empty, text based on `subtitle` in hexo config, support list format to random selection of a row for display
+    # 为空则按 hexo config.subtitle 显示
+    # If empty, text based on `subtitle` in hexo config
     text: "An elegant Material-Design theme for Hexo"
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
@@ -779,16 +779,11 @@ utterances:
 # See: https://disqus.com
 disqus:
   shortname:
-  # 以下为 Disqusjs 支持, 国内用户如果想使用 Disqus 建议配合使用，支持填入多个 apikey，建议自行搭建 api 端点
-  # The following are Disqusjs configurations, please ignore if DisqusJS is not required, it supports filling in multiple apikeys, it is recommended to build the API endpoint by yourself
+  # 以下为 Disqusjs 支持, 国内用户如果想使用 Disqus 建议配合使用
+  # The following are Disqusjs configurations, please ignore if DisqusJS is not required
   # See: https://github.com/SukkaW/DisqusJS
   disqusjs: false
-  apikey: 
-    - 'KEY1'
-    #- 'KEY2'
-  api: https://disqus.skk.moe/disqus/
-  admin: 
-  adminLabel: 
+  apikey:
 
 # Gitalk
 # 基于 GitHub Issues
